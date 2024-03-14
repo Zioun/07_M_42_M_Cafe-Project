@@ -3,7 +3,7 @@ const Blogs = ({blogs,countBlogs, countTime}) => {
     const {image, title, author, post_date, position, reading_time} = blogs
     return (
         <div className="border-b-2 mb-[40px]">
-            <img className="w-full h-[450px] rounded-[8px]" src={image} alt="blog-image" />
+            <img className="w-full h-[400px] rounded-[8px] object-cover" src={image} alt="blog-image" />
             <div className="flex justify-between items-center">
                 <div className="flex items-center gap-[24px] mt-[32px] mb-[16px]">
                     <img className="w-[60px] h-[60px] rounded-full object-cover border-2" src={author.profile_pic} alt="profile-image" />
