@@ -1,0 +1,51 @@
+[
+    {
+      "image": "https://i.ibb.co/FwdgLb8/Best-times-to-post-2022-BTTP-Social-Media.jpg",
+      "title": "JSON Data Structures: How-To Guide for Writing Efficient Code",
+      "author": {
+        "name": "John Doe",
+        "profile_pic": "https://i.ibb.co/cJ1mzkx/istockphoto-1307791650-612x612.jpg",
+        "job": "Programmer"
+      },
+      "post_date": "2024-03-14",
+      "position": "Senior Programmer",
+      "reading_time": "10 minutes"
+    },
+    {
+      "image": "https://i.ibb.co/VH97zXm/social-media-post-ideas-for-your-brand-in-2022.jpg",
+      "title": "Advanced JavaScript: Mastering Techniques for Powerful Web Development",
+      "author": {
+        "name": "Jane Smith",
+        "profile_pic": "https://i.ibb.co/DMZm7gQ/depositphotos-70976501-stock-photo-mature-teacher-in-class.webp",
+        "job": "Software Engineer"
+      },
+      "post_date": "2024-03-15",
+      "position": "Senior Developer",
+      "reading_time": "15 minutes"
+    },
+    {
+      "image": "https://i.ibb.co/gtvsdky/2201-Facebook-Video-Metrics.jpg",
+      "title": "Machine Learning Fundamentals: Essential Concepts for Data Science Success",
+      "author": {
+        "name": "Alex Johnson",
+        "profile_pic": "https://i.ibb.co/QvYKM9N/dummy-profile.png",
+        "job": "Data Scientist"
+      },
+      "post_date": "2024-03-16",
+      "position": "Senior Data Scientist",
+      "reading_time": "20 minutes"
+    },
+    {
+      "image": "https://i.ibb.co/k05JzwL/Sponsored-posts2.jpg",
+      "title": "Introduction to Neural Networks: Building Blocks of Artificial Intelligence",
+      "author": {
+        "name": "Chris Lee",
+        "profile_pic": "https://i.ibb.co/Q85TbCv/profile-user.jpg",
+        "job": "AI Researcher"
+      },
+      "post_date": "2024-03-17",
+      "position": "Lead Researcher",
+      "reading_time": "25 minutes"
+    }
+]
+  
