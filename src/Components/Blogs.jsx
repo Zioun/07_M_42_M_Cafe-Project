@@ -1,5 +1,5 @@
 import { IoBookmarks } from "react-icons/io5";
-const Blogs = ({blogs,countBlogs}) => {
+const Blogs = ({blogs,countBlogs, countTime}) => {
     const {image, title, author, post_date, position, reading_time} = blogs
     return (
         <div className="border-b-2 mb-[40px]">
@@ -13,7 +13,7 @@ const Blogs = ({blogs,countBlogs}) => {
                     </div>
                 </div>
                 <div className="text-[20px] font-medium text-[#707070] flex gap-[8px] items-center">
-                    <h1>{reading_time}</h1>
+                    <h1>{reading_time} minutes</h1>
                     <button onClick={()=>countBlogs(blogs)}><IoBookmarks /></button>
                 </div>
             </div>
@@ -23,7 +23,7 @@ const Blogs = ({blogs,countBlogs}) => {
                 <h3># {position}</h3>
             </div>
             <div>
-                <button className="border-b-2 mb-[38px] text-[20px] font-semibold text-[#6047EC]">Mark as read</button>
+                <button onClick={()=>countTime(blogs)} className="border-b-2 mb-[38px] text-[20px] font-semibold text-[#6047EC]">Mark as read</button>
             </div>
             
         </div>

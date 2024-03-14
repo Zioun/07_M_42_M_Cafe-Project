@@ -6,6 +6,7 @@ import { useState } from "react";
 function App() {
   const [blogs, setBlogs] = useState([]);
   const [countB, setCountB] = useState([]);
+  const [countT, setCountT] = useState(0);
   useEffect(()=>{
     fetch("Blogs.json")
     .then(res => res.json())
@@ -15,7 +16,9 @@ function App() {
     const sendBlogs = [...countB, blogs];
     setCountB(sendBlogs);
   };
-  console.log(countB.title)
+  const countTime = (blogs) =>{
+    setCountT(countT + blogs.reading_time);
+  }
   return (
     <>
       <section className="max-w-[1280px] m-auto">
@@ -26,12 +29,12 @@ function App() {
         <div className='grid grid-cols-12 gap-[24px] mt-[32px]'>
           <div className='col-span-8'>
             {
-              blogs.map(blogs => <Blogs key={blogs.title} countBlogs={countBlogs} blogs={blogs}></Blogs>)
+              blogs.map(blogs => <Blogs key={blogs.title} countTime={countTime} countBlogs={countBlogs} blogs={blogs}></Blogs>)
             }
           </div>
           <div className='col-span-4'>
             <div>
-              <h1 className="text-[24px] font-bold text-center py-[21px] text-[#6047EC] rounded-[8px] border-2 border-[#6047EC] bg-[#EFEDFD]">Spent time on read : 177 min</h1>
+              <h1 className="text-[24px] font-bold text-center py-[21px] text-[#6047EC] rounded-[8px] border-2 border-[#6047EC] bg-[#EFEDFD]">Spent time on read : {countT} min</h1>
             </div>
             <div className="text-[24px] font-bold px-[32px] py-[21px] text-[#111111] rounded-[8px] border-2 border-[#F3F3F3] bg-[#F3F3F3] mt-[24px]">
               <h1 className="">Bookmarked Blogs : {countB.length}</h1>
